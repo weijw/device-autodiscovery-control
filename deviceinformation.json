@@ -1,0 +1,48 @@
+﻿{
+	"name": "Companion Web API",
+	"description": "light Web API",
+	"version": "2.0.5",
+	"private": true,
+	"dws": {
+		"id": "9526",
+		"type": ["light"],
+		"rest": [
+			{
+				"type": "GET",
+				"api": "open",
+				"module": "open",
+				"description":"open the light"
+			},
+			{
+				"type": "close",
+				"api": "close",
+				"module": "close",
+				"description":"close the light"
+			},
+			{
+				"type": "UP",
+				"api": "control up",
+				"module": "control",
+				"description":"light up"
+			},
+			{
+				"type": "down",
+				"api": "control down",
+				"module": "control",
+				"description":"light down"
+			},
+			{
+				"type": "yellow",
+				"api": "change yellow",
+				"module": "change",
+				"description":"yellow"
+			},
+			{
+				"type": "blue",
+				"api": "change blue",
+				"module": "change",
+				"description":"blue"
+			}
+		]
+	}
+}
