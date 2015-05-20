@@ -5,6 +5,7 @@ var	myUuid = uuid.v4();
 var	fs = require('fs');
 var name = "device A";
 var autodiscovery = require('./auto-discovery');
+//var process = require('process')
 
 var app = express.createServer();
 
@@ -27,4 +28,7 @@ app.get("/ssdp/iot-desc.xml", function(req, res) {
 app.listen(3000);
 
 autodiscovery.autodicovery(app);
-	
+
+process.on('uncaughtException', function(e) {
+console.log(e);
+});
